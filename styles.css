@@ -20,7 +20,7 @@ h2 {
 
 .program {
 	text-align: center;
-	background-color: #023020;
+	background-color: #333;
 	color: cadetblue;
 }
 
@@ -43,4 +43,28 @@ a:link {
 section:nth-child(1) {
 	border-style: solid;
 	border-color: white;
+}
+ul {
+	list-style-type: none;
+	margin: 10;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: #111;
 }
