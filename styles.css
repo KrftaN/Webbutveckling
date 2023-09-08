@@ -44,6 +44,56 @@ section:nth-child(1) {
 	border-style: solid;
 	border-color: white;
 }
+
+.wrapper {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: 80px 50px auto 50px;
+	grid-template-areas: "header" "nav" "main" "footer";
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+	background-color: #333;
+}
+
+nav > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style-type: none;
+	text-align: center;
+	display: grid;
+	align-items: stretch;
+}
+
+nav li a {
+	color: white;
+}
+li a:hover {
+	background-color: #111;
+}
+main {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+}
+
+footer {
+	grid-area: footer;
+}
+/*
 ul {
 	list-style-type: none;
 	margin: 10;
@@ -64,7 +114,5 @@ li a {
 	text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-	background-color: #111;
-}
+
+*/
